@@ -18,9 +18,12 @@ from django.contrib import admin
 from django.urls import include, path
 from django.views.generic import TemplateView
 from app.views import *
+from app.views import candidatar_view
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', IndexView.as_view(), name='index'),
-    
+    path('vagas/', vagas_view, name='vagas'),
+    path('vagas/<int:vaga_id>/candidatar/', candidatar_view, name='candidatar'),
 ]

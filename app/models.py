@@ -13,6 +13,10 @@ class AreaAtuacao(models.Model):
 
     def __str__(self):
         return self.nome
+    
+    class Meta:
+        verbose_name = 'Áreas de Atuação'
+        verbose_name_plural = 'Áreas de Atuação'
 
 
 class Ocupacao(models.Model):
@@ -20,6 +24,10 @@ class Ocupacao(models.Model):
 
     def __str__(self):
         return self.nome
+    
+    class Meta:
+        verbose_name = 'Ocupação'
+        verbose_name_plural = 'Ocupações'
 
 
 class Pessoa(models.Model):
