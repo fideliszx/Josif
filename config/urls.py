@@ -25,5 +25,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', IndexView.as_view(), name='index'),
     path('vagas/', vagas_view, name='vagas'),
+    path('empresas/', empresas_view, name='empresas'),
     path('vagas/<int:vaga_id>/candidatar/', candidatar_view, name='candidatar'),
+    path('dicas/', dicas_view, name='dicas'),
 ]

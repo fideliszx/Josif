@@ -55,7 +55,7 @@ class Empresa(models.Model):
 
 class Vaga(models.Model):
     nome = models.CharField(max_length=40)
-    empresa = models.ForeignKey(Empresa, on_delete=models.CASCADE)
+    empresa = models.ForeignKey(Empresa, on_delete=models.CASCADE, related_name='vagas')
     requisitos = models.CharField(max_length=40)
     beneficios = models.CharField(max_length=40)
     cidade = models.ForeignKey(Cidade, on_delete=models.CASCADE)

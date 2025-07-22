@@ -178,6 +178,9 @@
                             <i class="bi bi-search"></i> Vagas
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/empresas/"><i class="bi bi-building"></i> Empresas</a>
+                      </li>
                 </ul>
             </div>
         </div>
@@ -189,12 +192,11 @@
             <h1 class="display-5 fw-bold">Olá, é bom te ver por aqui!</h1>
             <p class="lead mt-3">Conectamos pessoas a oportunidades de emprego e qualificação</p>
             <div class="mt-4">
-                <button class="btn btn-success btn-lg me-3">
-                    <i class="bi bi-search me-1"></i>Buscar Vagas
-                </button>
-                <button class="btn btn-outline-success btn-lg">
-                    <i class="bi bi-file-earmark-person me-1"></i>Cadastrar Currículo
-                </button>
+                <a href="/vagas/">
+                    <button class="btn btn-success btn-lg me-3">
+                        <i class="bi bi-search me-1"></i>Buscar Vagas
+                    </button>
+                </a>
             </div>
         </section>
 
@@ -202,29 +204,35 @@
         <div class="row mt-5">
             <div class="col-md-4 mb-4">
                 <div class="card h-100">
-                    <div class="card-body text-center">
-                        <i class="bi bi-search-heart text-success" style="font-size: 2rem; margin-bottom: 1rem;"></i>
-                        <h5 class="card-title">Vagas</h5>
-                        <p class="card-text">Encontre oportunidades de emprego na sua região.</p>
-                    </div>
+                    <a href="/vagas/" style="text-decoration: none;">
+                        <div class="card-body text-center">
+                            <i class="bi bi-search-heart text-success" style="font-size: 2rem; margin-bottom: 1rem;"></i>
+                            <h5 class="card-title">Vagas</h5>
+                            <p class="card-text">Encontre oportunidades de emprego na sua região.</p>
+                        </div>
+                    </a>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card h-100">
-                    <div class="card-body text-center">
-                        <i class="bi bi-book text-success" style="font-size: 2rem; margin-bottom: 1rem;"></i>
-                        <h5 class="card-title">Cursos</h5>
-                        <p class="card-text">Qualifique-se com nossos cursos gratuitos.</p>
+                    <a href="/empresas/" style="text-decoration: none;">
+                        <div class="card-body text-center">
+                            <i class="bi bi-book text-success" style="font-size: 2rem; margin-bottom: 1rem;"></i>
+                            <h5 class="card-title">Empresas</h5>
+                            <p class="card-text">Veja as empresas já cadastradas no site.</p>
+                        </div>
+                    </a>
                     </div>
-                </div>
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card h-100">
+                    <a href="/dicas/" style="text-decoration: none;">
                     <div class="card-body text-center">
                         <i class="bi bi-lightbulb text-success" style="font-size: 2rem; margin-bottom: 1rem;"></i>
                         <h5 class="card-title">Dicas</h5>
                         <p class="card-text">Aprenda a se destacar no mercado de trabalho.</p>
                     </div>
+                    </a>
                 </div>
             </div>
         </div>

@@ -16,6 +16,13 @@ def vagas_view(request):
     vagas = Vaga.objects.all()  # Corrigido
     return render(request, 'vagas.html', {'vagas': vagas})
 
+def empresas_view(request):
+    empresas = Empresa.objects.all()  # Corrigido
+    return render(request, 'empresas.html', {'empresas': empresas})
+
+def dicas_view(request):
+    return render(request, 'dicas.html')
+
 
 def candidatar_view(request, vaga_id):
     vaga = get_object_or_404(Vaga, id=vaga_id)
