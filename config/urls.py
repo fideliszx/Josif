@@ -19,6 +19,7 @@ from django.urls import include, path
 from django.views.generic import TemplateView
 from app.views import *
 from app.views import candidatar_view
+from app import views
 
 
 urlpatterns = [
@@ -28,4 +29,7 @@ urlpatterns = [
     path('empresas/', empresas_view, name='empresas'),
     path('vagas/<int:vaga_id>/candidatar/', candidatar_view, name='candidatar'),
     path('dicas/', dicas_view, name='dicas'),
+    path("candidaturas/", views.lista_candidaturas, name="lista_candidaturas"),
+    path("candidaturas/<int:candidatura_id>/", views.detalhe_candidatura, name="detalhe_candidatura"),
+    path("candidaturas/<int:candidatura_id>/excluir/", views.excluir_candidatura, name="excluir_candidatura"),
 ]
